@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
+.inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared related style */
+span#special-text{
+    font-family: 'Miama', sans-serif;
+    font-size: 4.875rem;
+    font-weight: 400;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg-color-pri{
+    background-color:  rgb(0, 0, 0);
+}
+body > header{
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0) 100%);
+}
+header > .header-container{
+    max-width: 75%;
+    margin: 0 auto;
+    /* background-image: linear-gradient(180deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0) 100%); */
+}
+main > section{
+    max-width: 73.6%;
+    margin: 0 auto;
+}
+.specific-title{
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+}
+.specific-desc{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+}
+.btn-pri{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 46.5px;
+    margin-top: 32px;
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 42px;
+    border-style: none;
+    gap: 14px;
+}
+.btn-2ndary{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 48px;
+    margin-top: 32px;
+    border-radius: 42px;
+    border: 2px solid white;
+    background-color: black;
+}
+/* header related style */
+
+
+
+/*header > navbar related style */
+.navbar{
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: rgba(230, 83, 60, 1);
+    font-style: italic;
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 12px 4px;
+}
+
+.nav-items , .nav-link{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    gap: 47px;
+}
+#special-link{
+padding: 8px 20px;
+background-color: rgba(230, 83, 60, 1);
+border-radius: 46px;
+}
+
+
+/* header > header-details-container related style */
+.h-title{
+    font-size: 4.875rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+.header-details-container{
+    width: 56.5%;
+    margin-top: 96px;
+
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-image-container{
+    position: relative;
+}
+.banner-image{
+    width: 100%;
+    margin: 0 auto;
+}
+.p1-container{
+    width: 193px;
+    height: 98px;
+    padding: 16px ;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 125px;
+    right: -74px;
+}
+.p1-title{
+    font-size: 2.5rem;
+    color: white;
+}
+.p1-desc{
+    font-size: o.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.p2-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 206px;
+    height: 96px;
+    padding: 16px ;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 63px;
+    left: -113px;
+}
+.p2-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(230, 83, 60, 1);
+}
+/* .p2-details-container{
+
+} */
+.p2-title{
+    font-size: 1.5rem;
+    color: white;
+}
+.p2-desc{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+}

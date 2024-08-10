@@ -57,6 +57,7 @@ main > section{
     border-radius: 42px;
     border-style: none;
     gap: 14px;
+    margin: 10px;
 }
 .btn-2ndary{
     font-size: 1.125rem;
@@ -329,24 +330,23 @@ select,#option{
 
 
 /* special section 2 related style  */
+.start-section{
+    margin-top: 66.5px;
+}
 
 #special-sec-2{
-    max-width: 100%;
+    max-width: 75%;
     margin: 0 auto;
-    background-color: white;
-    padding: 20px;
     margin-top: 66.5px;
-    border-radius: 18px;
-}
-.section-container{
-    max-width: 73.6%;
-    margin: 0 auto;
+
 }
 .all-card-container{
-    max-width: 73.6%;
-    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
 .card-main-container{
     /* margin-top: 50px; */
@@ -354,13 +354,13 @@ select,#option{
     margin: 0 auto;
 }
 .card-main-title{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: olive;
+    color: white;
+    margin-bottom: 10px;
 }
+
 .card-container{
-    /* margin-top: 20px; */
-    /* max-width: 100%; */
     width: 100%;
     height: 100%;
     background-color: cadetblue;
@@ -372,19 +372,9 @@ select,#option{
 .banner-container1{
     /* gap: 100px; */
     background-image: url(../images/banner1.jpg);
+    padding: 10px;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 18px;
-    display: flex;
-    justify-content: space-between;
-}
-.banner-details-container{
-    padding: 50px;
-}
-.banner-img{
-    max-width: 100%;
-    /* max-height: 100%; */
-    margin: 0 auto;
     border-radius: 18px;
 }
 .card-desc{
@@ -396,14 +386,19 @@ select,#option{
 .card-reserve-container{
     margin-top: 20px;
 }
+.reserve-rate{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 38px
+}
 .banner-container2{
     /* gap: 100px; */
     background-image: url(../images/banner2.jpg);
+    padding: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
-    display: flex;
-    justify-content: space-between;
 }
 .banner-btn{
     margin-top: 20px;
@@ -418,7 +413,9 @@ span#banner-title-sp-text{
 }
 .reserver-main-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 .reserve-btn{
     margin-top: 40px;
@@ -427,46 +424,6 @@ span#banner-title-sp-text{
     border-radius: 9px;
     border-style: none;
 }
-.banner-container3{
-    /* gap: 100px; */
-    background-image: url(../images/banner3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 18px;
-    display: flex;
-    justify-content: space-between;
-}
-.banner-container4{
-    /* gap: 100px; */
-    background-image: url(../images/banner4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 18px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* meet our team related section style */
 .team-section{
@@ -560,15 +517,6 @@ span#banner-title-sp-text{
     margin-top: 36px;
 }
 
-
-
-
-
-
-
-
-
-
 /* responsive related style */
 @media screen and (max-width: 576px) {
     header > .header-container{
@@ -614,6 +562,9 @@ span#banner-title-sp-text{
     }
     button.btn-2ndary {
         padding: 16px 20.5px;
+    }
+    .banner-image-container {
+        margin-top: 48px;
     }
     .p1-container {
         width: 145.9px;
@@ -753,6 +704,46 @@ span#banner-title-sp-text{
         max-width: 90%;
         text-align: start;
     }
-
+    /* challenge part 2 related rwd */
+    .start-section{
+        margin-top: 40.5px;
+    }
+    h3.section-title.specific-title {
+        font-size: 2rem;
+    }
+    p.section-desc.specific-desc {
+        text-align: center;
+    }
+    #special-sec-2{
+        max-width: 90%;
+        margin-top: 40.5px;
+    
+    }
+    .all-card-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    h3.banner-title.specific-title {
+        font-size: 2.5rem;
+    }
+    p.reserve-desc {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    button.banner-btn {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    p.banner-desc.specific-desc {
+        margin-top: 5px;
+    }
+    p.reserve-rate {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 14px;
+    }
+    button.reserve-btn {
+        margin-top: 10px;
+    }
     
     }

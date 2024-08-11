@@ -109,6 +109,10 @@ padding: 8px 20px;
 background-color: rgba(230, 83, 60, 1);
 border-radius: 46px;
 }
+#special-link2{
+padding: 8px 20px;
+}
+
 
 
 /* header > header-details-container related style */
@@ -173,6 +177,10 @@ border-radius: 46px;
     border-radius: 50%;
     background-color: rgba(230, 83, 60, 1);
 }
+.p2-player{
+    display: none;
+}
+
 /* .p2-details-container{
 
 } */
@@ -255,7 +263,7 @@ border-radius: 46px;
     padding: 50px;
 }
 .special-sec-container{
-    width: 73.6%;
+    max-width: 73.6%;
     margin: 0  auto;
     display: flex;
     justify-content: space-between;
@@ -283,10 +291,10 @@ td {
     /* border-radius: 18px; */
     padding: 15px 20px 14px 23px;
 }
-.your-bmi-container{
+/* .your-bmi-container{
     max-width: 54.4%;
     margin: 0 auto;
-}
+} */
 .your-title{
     font-size: 1.75rem;
     color: white;
@@ -341,12 +349,15 @@ select,#option{
 
 }
 .all-card-container{
-    background-color: rgba(34, 34, 34, 1);
+    background-color:rgba(34, 34, 34, 1);
     border-radius: 18px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+}
+.all-card-container:hover{
+    background-color: white;
 }
 .card-main-container{
     /* margin-top: 50px; */
@@ -470,6 +481,8 @@ span#banner-title-sp-text{
 }
 /* footer part style */
 #footer-part{
+    max-width: 100%;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 60.5px;
     padding: 66px 0 31px 0;
@@ -516,7 +529,6 @@ span#banner-title-sp-text{
     color: rgba(255, 255, 255, 0.5);
     margin-top: 36px;
 }
-
 /* responsive related style */
 @media screen and (max-width: 576px) {
     header > .header-container{
@@ -535,6 +547,13 @@ span#banner-title-sp-text{
     }
     .nav-items{
         display: none;
+    }
+    .ham-bars{
+        display: block;
+    }
+    i.fa-solid.fa-bars {
+        color: white;
+        font-size: 1.5rem;
     }
     .banner-container {
         flex-direction: column;
@@ -597,6 +616,22 @@ span#banner-title-sp-text{
     p.p2-desc {
         font-size: 0.76rem;
     }
+    .p2-circle{
+        display: none;
+    }
+    .p2-player{
+        display: block;
+        width: 33.24px;
+        height: 33.24px;
+        font-size: 1rem;
+        padding: 7.56px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: rgba(230, 83, 60, 1);
+    }
+    .p2-player, i{
+        color: white;
+    }
 
     /* habit related rwd */
     .habit-details-container {
@@ -629,6 +664,10 @@ span#banner-title-sp-text{
         /* align-items: center; */
         margin-top: 24px;
     }
+    .example-container{
+        max-width: 100%;
+        margin: 0 auto;
+    }
     /* challenge special section responsive */
     .bmi-container {
         width: 100%;
@@ -644,11 +683,13 @@ span#banner-title-sp-text{
         padding-bottom: 43px; */
     }
     .special-sec-container {
+        max-width: 90%;
         flex-direction: column;
         gap: 42px;
     }
     h3.chart-title {
         font-size: 1rem;
+        margin-bottom: 23px;
     }
     .your-bmi-container {
         max-width: 100%;
@@ -658,7 +699,7 @@ span#banner-title-sp-text{
         width: 100%;
     }
     button.bmi-btn.btn-pri {
-        margin-top: 20px;
+        margin-top: 34px;
         /* padding: 16px; */
         padding: 16px 70.5px;
     }
@@ -691,6 +732,7 @@ span#banner-title-sp-text{
     .trainer6{
         order: 4;
     }
+    
     /* footer related responsive */
     footer#footer-part {
         padding: 44px 0 57px 0;
@@ -703,6 +745,11 @@ span#banner-title-sp-text{
     .reserve-container{
         max-width: 90%;
         text-align: start;
+        margin-top: 72px;
+    }
+    p.reserve-desc {
+        font-size: 1rem;
+        margin-top: 40px;
     }
     /* challenge part 2 related rwd */
     .start-section{
@@ -712,7 +759,7 @@ span#banner-title-sp-text{
         font-size: 2rem;
     }
     p.section-desc.specific-desc {
-        text-align: center;
+        text-align: start;
     }
     #special-sec-2{
         max-width: 90%;
@@ -724,11 +771,7 @@ span#banner-title-sp-text{
         gap: 10px;
     }
     h3.banner-title.specific-title {
-        font-size: 2.5rem;
-    }
-    p.reserve-desc {
-        font-size: 1rem;
-        margin-top: 10px;
+        font-size: 2rem;
     }
     button.banner-btn {
         margin-top: 10px;

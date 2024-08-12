@@ -12,7 +12,7 @@
 /* shared related style */
 span#special-text{
     font-family: 'Miama', sans-serif;
-    font-size: 4.875rem;
+    font-size: 8.875rem;
     font-weight: 400;
 }
 *{
@@ -117,9 +117,11 @@ padding: 8px 20px;
 
 /* header > header-details-container related style */
 .h-title{
+    /* margin-top: 96px; */
     font-size: 4.875rem;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 16px;
+    line-height: 82px;
 }
 .header-details-container{
     width: 56.5%;
@@ -129,7 +131,7 @@ padding: 8px 20px;
 .banner-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 .banner-image-container{
     position: relative;
@@ -229,7 +231,7 @@ padding: 8px 20px;
     margin-top: 100px;
     margin-bottom: 60.5px;
     background-color: rgba(34, 34, 34, 1);
-    padding: 41px 54px;
+    padding: 30px 0;
     border-radius: 18px;
     display: flex;
     justify-content: space-between;
@@ -237,7 +239,11 @@ padding: 8px 20px;
     gap: 165px;
 }
 .run-container{
-    width: 41.8%;
+    max-width: 41.5%;
+    margin: 0 auto;
+}
+.run-container{
+    width: 37.36%;
     margin: 0 auto;
 }
 .run-image{
@@ -245,6 +251,9 @@ padding: 8px 20px;
     margin: 0 auto;
     border-radius: 18px;
 
+}
+button.run-sec-btn.btn-pri {
+    margin-top: 34px;
 }
 
 /* bmi section related style */
@@ -320,11 +329,14 @@ input{
     border-style: none;
     /* width: 50%; */
 }
+::placeholder{
+    color:rgba(255, 255, 255, 0.6);
+}
 select,#option{
     font-size: 1rem;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.1);
-    color:rgba(255, 255, 255, 0.3);
+    color:rgba(255, 255, 255, 0.6);
     padding: 13px ;
     border-style: none;
     border-radius: 8px;
@@ -332,8 +344,11 @@ select,#option{
 .special-dropdown{
     grid-column-start: 1;
     grid-column-end: 3;
-    color:rgba(255, 255, 255, 0.3);
+    color:rgba(255, 255, 255, 0.6);
     padding: 13px;
+}
+button.bmi-btn.btn-pri {
+    margin-top: 34px;
 }
 
 
@@ -349,6 +364,7 @@ select,#option{
 
 }
 .all-card-container{
+    
     background-color:rgba(34, 34, 34, 1);
     border-radius: 18px;
     padding: 20px;
@@ -356,9 +372,9 @@ select,#option{
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
-.all-card-container:hover{
-    background-color: white;
-}
+/* .all-card-container:hover{
+    background-color: cadetblue;
+} */
 .card-main-container{
     /* margin-top: 50px; */
     max-width: 100%;
@@ -374,16 +390,17 @@ select,#option{
 .card-container{
     width: 100%;
     height: 100%;
-    background-color: cadetblue;
+    background-color: darkslategray;
+    /* background-color: darkolivegreen; */
     border-radius: 18px;
-    box-shadow: 2px 2px 10px tomato;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 1);
     padding: 20px;
 }
 
 .banner-container1{
     /* gap: 100px; */
-    background-image: url(../images/banner1.jpg);
-    padding: 10px;
+    background-image: url(../images/card1-bg.jpg);
+    padding: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
@@ -391,7 +408,7 @@ select,#option{
 .card-desc{
     font-size: 1rem;
     font-weight: 400;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 14px;
 }
 .card-reserve-container{
@@ -405,8 +422,24 @@ select,#option{
 }
 .banner-container2{
     /* gap: 100px; */
-    background-image: url(../images/banner2.jpg);
-    padding: 10px;
+    background-image: url(../images/card2.bg.jpg);
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+.banner-container3{
+    /* gap: 100px; */
+    background-image: url(../images/card3-bg.jpg);
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+.banner-container4{
+    /* gap: 100px; */
+    background-image: url(../images/card4.bg.jpg);
+    padding: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
@@ -431,7 +464,7 @@ span#banner-title-sp-text{
 .reserve-btn{
     margin-top: 40px;
     padding: 8px 100px;
-    background-color: coral;
+    background-color: rgba(230, 83, 60, 1);
     border-radius: 9px;
     border-style: none;
 }
@@ -495,7 +528,7 @@ span#banner-title-sp-text{
     grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
     /* justify-content: space-around; */
-    gap: 152px;
+    gap: 102px;
 }
 .start-title{
     font-size: 2rem;
@@ -513,6 +546,15 @@ span#banner-title-sp-text{
     font-weight: 900;
     color: rgba(230, 83, 60, 1);
     font-style: italic;
+}
+.get-start-container{
+    margin-left: 200px;
+    gap: 50px;
+}
+.reserve-container > #special-horigental{
+    height: 2px;  
+    background-color: rgba(255, 255, 255, 0.1);  
+    border: none;  
 }
 .reserve-container{
     justify-items: center;
@@ -567,11 +609,16 @@ span#banner-title-sp-text{
     h1.h-title {
         font-size: 2.25rem;
         width: 285px;
+        line-height: 45px;
+    }
+    span#special-text {
+        font-size: 4.875rem;
     }
     p.h-desc.specific-desc {
         font-size: 1rem;
         margin-top: 28px;
         width: 70%;
+        line-height: 25px;
     }
     button.btn-pri {
         padding: 16px 41.5px;
@@ -622,7 +669,7 @@ span#banner-title-sp-text{
     .p2-player{
         display: block;
         width: 33.24px;
-        height: 33.24px;
+        height: 34.24px;
         font-size: 1rem;
         padding: 7.56px;
         border-radius: 50%;
@@ -635,10 +682,16 @@ span#banner-title-sp-text{
 
     /* habit related rwd */
     .habit-details-container {
-        margin-top: 30px;
+        margin-top: 10px;
     }
     h3.habit-title.specific-title {
         font-size: 2rem;
+        margin-bottom: 14px;
+    }
+    p.habit-desc.specific-desc {
+        line-height: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
     .habit-example-container {
         grid-template-columns: repeat(1, 1fr);
@@ -651,9 +704,15 @@ span#banner-title-sp-text{
         flex-direction: column;
         gap: 31px;
     }
-    .run-container {
-        width: 100%;
+    /* .run-container {
+        width: 90%;
         margin: 0 auto;
+    } */
+    .run-container{
+        max-width: 100%;
+    }
+    .run-container{
+        width: 100%;
     }
     h3.run-title.specific-title {
         font-size: 2rem;
@@ -694,6 +753,9 @@ span#banner-title-sp-text{
     .your-bmi-container {
         max-width: 100%;
     }
+    .your-title {
+        font-size: 1rem;
+    }
     input#text {
         padding: 13px 20px;
         width: 100%;
@@ -732,6 +794,13 @@ span#banner-title-sp-text{
     .trainer6{
         order: 4;
     }
+    .team-member-title{
+        width: 150px;
+        white-space: nowrap;
+        /* border: 2px solid salmon; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     
     /* footer related responsive */
     footer#footer-part {
@@ -751,6 +820,9 @@ span#banner-title-sp-text{
         font-size: 1rem;
         margin-top: 40px;
     }
+    .get-start-container{
+        margin-left: 0;
+    }
     /* challenge part 2 related rwd */
     .start-section{
         margin-top: 40.5px;
@@ -768,7 +840,8 @@ span#banner-title-sp-text{
     }
     .all-card-container{
         grid-template-columns: repeat(1,1fr);
-        gap: 10px;
+        gap: 20px;
+        background-color: cadetblue;
     }
     h3.banner-title.specific-title {
         font-size: 2rem;
@@ -783,10 +856,10 @@ span#banner-title-sp-text{
     p.reserve-rate {
         font-weight: 400;
         font-size: 1rem;
-        margin-top: 14px;
+        margin-top: 42px;
     }
     button.reserve-btn {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
     }

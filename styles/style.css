@@ -46,6 +46,7 @@ main > section{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 14px;
+    /* width: 312px; */
 }
 .btn-pri{
     font-size: 1.125rem;
@@ -168,7 +169,8 @@ padding: 8px 20px;
     height: 96px;
     padding: 16px ;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: rgba(48, 48, 48, 0.54);
     position: absolute;
     bottom: 63px;
     left: -113px;
@@ -242,15 +244,13 @@ padding: 8px 20px;
     max-width: 41.5%;
     margin: 0 auto;
 }
-.run-container{
-    width: 37.36%;
-    margin: 0 auto;
-}
 .run-image{
     width: 100%;
     margin: 0 auto;
     border-radius: 18px;
-
+}
+p.run-desc.specific-desc {
+    width: 390px;
 }
 button.run-sec-btn.btn-pri {
     margin-top: 34px;
@@ -463,9 +463,12 @@ span#banner-title-sp-text{
 }
 .reserve-btn{
     margin-top: 40px;
-    padding: 8px 100px;
+    padding: 16px 100px;
     background-color: rgba(230, 83, 60, 1);
-    border-radius: 9px;
+    color: white;
+    font-size: .875rem;
+    font-weight: 600;
+    border-radius: 42px;
     border-style: none;
 }
 
@@ -499,8 +502,8 @@ span#banner-title-sp-text{
 }
 .team-position-container{
     position: absolute;
-    bottom: 79px;
-    left: 80px;
+    bottom: 60px;
+    left: 55px;
 }
 .team-member-title{
     font-size: 1.25rem;
@@ -711,11 +714,11 @@ span#banner-title-sp-text{
     .run-container{
         max-width: 100%;
     }
-    .run-container{
-        width: 100%;
-    }
     h3.run-title.specific-title {
         font-size: 2rem;
+    }
+    p.run-desc.specific-desc {
+        width: 100%;
     }
     button.run-sec-btn.btn-pri {
         /* text-align: center; */
@@ -773,7 +776,7 @@ span#banner-title-sp-text{
         grid-template-columns: repeat(1, 1fr);
     }
     .team-position-container {
-        bottom: 20px;
+        bottom: 40px;
         left: 19px;
     }
     .trainer1{

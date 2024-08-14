@@ -31,10 +31,14 @@ body > header{
 header > .header-container{
     max-width: 75%;
     margin: 0 auto;
+    /* max-width: 73.6%;
+    margin: 0 auto;  */
     /* background-image: linear-gradient(180deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0) 100%); */
 }
 main > section{
-    max-width: 73.6%;
+    /* max-width: 73.6%;
+    margin: 0 auto; */
+    max-width: 70.6%;
     margin: 0 auto;
 }
 .specific-title{
@@ -173,7 +177,7 @@ padding: 8px 20px;
     background-color: rgba(48, 48, 48, 0.54);
     position: absolute;
     bottom: 63px;
-    left: -113px;
+    left: -90px;
 }
 .p2-circle{
     width: 40px;
@@ -213,6 +217,8 @@ padding: 8px 20px;
     width: 100%;
     margin: 0 auto;
     border-radius: 100%;
+    /* border-w: 50px solid red; */
+    border: solid rgba(255, 255, 255, 0.1) 4px;
 }
 .example-title{
     font-size: 1.125rem;
@@ -233,7 +239,7 @@ padding: 8px 20px;
     margin-top: 100px;
     margin-bottom: 60.5px;
     background-color: rgba(34, 34, 34, 1);
-    padding: 30px 0;
+    padding: 30px 54px;
     border-radius: 18px;
     display: flex;
     justify-content: space-between;
@@ -241,13 +247,23 @@ padding: 8px 20px;
     gap: 165px;
 }
 .run-container{
-    max-width: 41.5%;
-    margin: 0 auto;
+    width: 41.5%;
+}
+.run-container2{
+    position: relative;
+    overflow: hidden;
+    width: 367px;
+    height: 314px;
+    border-radius: 16px;
 }
 .run-image{
     width: 100%;
-    margin: 0 auto;
-    border-radius: 18px;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 84%;
+    left: 8%;
+    transform: translate(-50%, -50%) scale(2.6);
 }
 p.run-desc.specific-desc {
     width: 390px;
@@ -272,7 +288,7 @@ button.run-sec-btn.btn-pri {
     padding: 50px;
 }
 .special-sec-container{
-    max-width: 73.6%;
+    max-width: 70.6%;
     margin: 0  auto;
     display: flex;
     justify-content: space-between;
@@ -495,14 +511,16 @@ span#banner-title-sp-text{
 }
 .team-member{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 22rem;
+    /* height: 100%; */
     margin: 0 auto;
     border-radius: 18px;
     
 }
 .team-position-container{
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 55px;
 }
 .team-member-title{
@@ -634,6 +652,7 @@ span#banner-title-sp-text{
     }
     .banner-image-container {
         margin-top: 48px;
+        margin-left: 20px;
     }
     .p1-container {
         width: 145.9px;
@@ -654,7 +673,7 @@ span#banner-title-sp-text{
         height: 4.54rem;
         gap: 9.7px;
         bottom: 244px;
-        left: 12px;
+        left: 4px;
     }
     .p2-circle {
         width: 30.24px;
@@ -707,12 +726,16 @@ span#banner-title-sp-text{
         flex-direction: column;
         gap: 31px;
     }
-    /* .run-container {
-        width: 90%;
-        margin: 0 auto;
-    } */
+    img.run-image {
+            top: 0%;
+            left: 0;
+            transform: none;
+    }
     .run-container{
-        max-width: 100%;
+        width: 100%;
+    }
+    .run-container2{
+        width: 100%;
     }
     h3.run-title.specific-title {
         font-size: 2rem;
@@ -722,7 +745,7 @@ span#banner-title-sp-text{
     }
     button.run-sec-btn.btn-pri {
         /* text-align: center; */
-        padding: 16px 103px;
+        padding: 16px 105px;
         /* align-items: center; */
         margin-top: 24px;
     }
@@ -776,8 +799,7 @@ span#banner-title-sp-text{
         grid-template-columns: repeat(1, 1fr);
     }
     .team-position-container {
-        bottom: 40px;
-        left: 19px;
+        left: 31px;
     }
     .trainer1{
         display: none;
@@ -843,8 +865,7 @@ span#banner-title-sp-text{
     }
     .all-card-container{
         grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-        background-color: cadetblue;
+        gap: 30px;
     }
     h3.banner-title.specific-title {
         font-size: 2rem;
